@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:padding="@dimen/spacing_double"
+        style="@style/TextTitleStyle"
+        android:visibility="gone"
+        android:textSize="@dimen/text_big"
+        android:gravity="center"
+        android:text="抱歉，未搜索到相关结果，请您检查输入或者尝试其他关键词"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

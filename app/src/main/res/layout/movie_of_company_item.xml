@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_double">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/test_pic2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextTitleStyle"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_normal"
+            tools:text="XXXXX" />
+
+        <TextView
+            android:id="@+id/tv_title_en"
+            style="@style/TextStyle"
+            tools:text="xxxxxxxx" />
+        <TextView
+            android:id="@+id/tv_director"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="xxxxxxxx" />
+        <TextView
+            android:id="@+id/tv_actors"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="xxxxxxxx" />
+        <TextView
+            android:id="@+id/tv_date_area"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="xxxxxxxx" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_big"
+        android:textColor="?attr/colorAccent"
+        android:textStyle="bold"
+        tools:text="8.8"/>
+
+</LinearLayout>

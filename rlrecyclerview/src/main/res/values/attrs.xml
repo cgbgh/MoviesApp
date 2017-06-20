@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="refreshLayout" format="reference"/>
+    <attr name="loadLayout" format="reference"/>
+
+    <declare-styleable name="RLRecyclerView">
+        <attr name="refreshLayout"/>
+        <attr name="loadLayout"/>
+    </declare-styleable>
+
+</resources>

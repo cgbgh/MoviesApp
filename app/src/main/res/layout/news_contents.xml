@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextTitleStyle"
+            android:padding="@dimen/text_normal"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_big"
+            tools:text="《金刚狼3》北美周五票房强势登顶" />
+
+        <TextView
+            android:id="@+id/tv_publish_time"
+            style="@style/TextEllipStyle"
+            android:layout_marginLeft="@dimen/spacing_double"
+            android:layout_marginRight="@dimen/spacing_double"
+            android:textSize="@dimen/text_mid"
+            tools:text="2017-03-05 08:21" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_desc"
+            android:textSize="@dimen/text_mid"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginLeft="@dimen/spacing_double"
+            android:layout_marginRight="@dimen/spacing_double"
+            tools:text="从此世间再无金刚狼" />
+
+        <!--<include layout="@layout/divider_view" />-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_img_content"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:visibility="gone"
+            android:background="@android:color/black"></android.support.v4.view.ViewPager>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+
+
+        <include layout="@layout/movie_detail_related" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

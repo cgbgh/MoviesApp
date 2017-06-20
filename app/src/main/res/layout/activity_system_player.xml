@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <com.app.cgb.movies.ui.view.SizableVideo
+        android:id="@+id/svv_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <include
+        android:id="@+id/ll_loading"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/video_player_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/video_player_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/rl_volume"
+        layout="@layout/video_player_volume" />
+
+    <include
+        android:id="@+id/rl_brightness"
+        layout="@layout/video_player_brightness" />
+
+    <TextView
+        android:id="@+id/tv_onTouch_show"
+        style="@style/style_tv_player"
+        android:layout_centerInParent="true"
+        android:text="音量："
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ibtn_play_on_video"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/play_on_video"
+        android:visibility="gone" />
+
+</RelativeLayout>

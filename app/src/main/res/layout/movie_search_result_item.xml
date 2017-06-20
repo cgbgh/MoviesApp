@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/spacing_normal">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="80dp"
+        android:layout_height="115dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/test_pic2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_cn"
+            style="@style/TextTitleStyle"
+            android:textSize="@dimen/text_normal"
+            tools:text="影片名/姓名" />
+
+        <TextView
+            android:id="@+id/tv_name_en"
+            style="@style/TextStyle"
+            tools:text="外文名" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="类型/职业" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="上映日期/生日" />
+
+        <TextView
+            android:id="@+id/tv_director_constellation"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="导演/星座" />
+
+        <TextView
+            android:id="@+id/tv_actors_birthArea"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="主演/出生地" />
+    </LinearLayout>
+
+</LinearLayout>

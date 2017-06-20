@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/spacing_double"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_normal"
+    android:paddingTop="@dimen/spacing_normal">
+
+    <TextView
+        android:id="@+id/tv_award_name"
+        style="@style/TextTitleStyle"
+        android:textSize="@dimen/text_normal"
+        tools:text="第1届（1993） -  XXXXXXX" />
+
+    <LinearLayout
+        android:id="@+id/ll_movies"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal">
+
+        <ImageView
+            android:id="@+id/iv_awards"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/mtime_test_pic"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_double"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_award_movie"
+                style="@style/TextNormalStyle"
+                tools:text="影片：XXXX"/>
+            <TextView
+                android:id="@+id/tv_role"
+                style="@style/TextNormalStyle"
+                tools:text="角色：XXXX"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

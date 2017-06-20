@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cgb="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingRight="@dimen/spacing_normal"
+        android:gravity="center_vertical">
+
+
+        <include layout="@layout/timeline"/>
+
+        <TextView
+            android:padding="@dimen/spacing_double"
+            android:id="@+id/tv_year"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/attr_color_accent"
+            android:textSize="@dimen/text_normal"
+            cgb:text="2017" />
+
+        <TextView
+            android:id="@+id/tv_exp_title"
+            style="@style/TextTitleStyle"
+            android:textSize="@dimen/text_mid"
+            android:layout_weight="1"
+            cgb:text="XXXXXXXX" />
+        <ImageView
+            android:id="@+id/down_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/down_arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:orientation="horizontal">
+        <include layout="@layout/timeline_line"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="#eee"
+            android:layout_marginLeft="@dimen/spacing_double"
+            android:elevation="@dimen/spacing_mico"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_child"
+        android:background="@drawable/shape_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/timeline_line" android:id="@+id/timeline_line"/>
+
+        <TextView
+            android:id="@+id/tv_exp_content"
+            android:padding="@dimen/spacing_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_small"
+            cgb:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+
+        <ImageView
+            android:id="@+id/iv_exp_cover"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:scaleType="centerCrop"
+            cgb:src="@drawable/test_pic2" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="#000"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_video_name"
+            style="@style/style_tv_player"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:maxLines="1"
+            android:text="视频名称" />
+
+        <ImageView
+            android:id="@+id/iv_battery"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_time_clock"
+            style="@style/style_tv_player"
+            android:text="12:00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll_status"
+        android:background="#8000"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ibtn_volume"
+            style="@style/style_ibtn_player"
+            android:background="@drawable/selector_volume_on" />
+
+        <SeekBar
+            android:id="@+id/sb_volume"
+            style="@style/style_seekbar_player" />
+
+        <ImageButton
+            android:id="@+id/ibtn_info"
+            style="@style/style_ibtn_player"
+            android:background="@drawable/selector_info" />
+
+    </LinearLayout>
+</RelativeLayout>

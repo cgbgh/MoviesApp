@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/test_news_header"/>
+
+    <TextView
+        android:id="@+id/tv_title_cn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        tools:text="2018奥斯卡最佳影片超提前预测"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_big"
+        android:gravity="center"
+        android:background="#6000"/>
+</RelativeLayout>

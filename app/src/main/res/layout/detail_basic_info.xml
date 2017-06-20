@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/spacing_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_double">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorAccent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/spacing_mico"
+                android:paddingTop="@dimen/spacing_mico"
+                android:text="基本资料"
+                android:textColor="@color/text_color_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_scores"
+                    tools:text="9.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="@dimen/text_bigger" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        style="@style/TextStyle"
+                        tools:text="时长：171分钟" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        style="@style/TextStyle"
+                        tools:text="类型：爱情/剧情/音乐" />
+
+                    <TextView
+                        android:id="@+id/tv_show_time"
+                        style="@style/TextStyle"
+                        tools:text="1993年01月01日中国香港上映" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_story_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_story"
+                            style="@style/TextStyle"
+                            tools:text="剧情：演生角的段小楼与演旦角的程蝶衣是自小在一起的师兄弟。两人合演的《霸王别姬》誉满京城，他们
+                    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..."
+                            android:maxLines="2" />
+
+                        <ImageView
+                            android:id="@+id/iv_text_control"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_expand_more_black_12dp"
+                            android:tint="@android:color/darker_gray" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

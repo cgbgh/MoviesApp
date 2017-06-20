@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_normal"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/test_pic2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_normal"
+            tools:text="6大亮点及3个缺陷" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="XXXXXXXXXXXXX" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_avatar"-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--tools:src="@drawable/mtime_test_pic" />-->
+
+            <com.app.cgb.movies.ui.view.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_tiny"
+                tools:text="xxx-评" />
+
+            <TextView
+                android:id="@+id/tv_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_tiny"
+                android:textColor="@color/text_color_dark"
+                tools:text="xxx-评" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

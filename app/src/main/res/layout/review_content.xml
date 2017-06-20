@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextTitleStyle"
+            android:layout_margin="@dimen/spacing_double"
+            android:textSize="@dimen/text_big"
+            tools:text="XXXXXXX" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_marginLeft="@dimen/spacing_double"
+            android:layout_marginRight="@dimen/spacing_double"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/iv_movie_pic"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                tools:src="@drawable/test_pic2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/spacing_double"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_normal"
+                    tools:text="XXXXXXXXXXXXXXXX" />
+
+                <include layout="@layout/user_review_info" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_view" />
+
+        <WebView
+            android:id="@+id/wv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal"></WebView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/ll_head_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minWidth="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_refresh_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rv_head_normal"
+                android:textColor="#B5B5B5" />
+
+            <TextView
+                android:id="@+id/tv_last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/rv_head_last_time"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_head_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ll_head_text"
+            android:src="@drawable/pulltorefresh_arrow" />
+
+        <ProgressBar
+            android:id="@+id/pb_refresh"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ll_head_text"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

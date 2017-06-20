@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_normal"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:src="@drawable/test_news_type0"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title_cn"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/text_color_dark"
+            tools:text="今年那些获奥斯卡提名的澳洲电影"/>
+        <TextView
+            android:id="@+id/tv_publish_time"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="2017-03-01 10:00"/>
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="《钢锯岭》险没拍成《雄狮》母子原型接受采访"/>
+        <TextView
+            android:id="@+id/tv_tag"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            android:textColor="?attr/colorAccent"
+            tools:text="血战钢锯岭,雄狮,奥斯卡"/>
+    </LinearLayout>
+
+</LinearLayout>

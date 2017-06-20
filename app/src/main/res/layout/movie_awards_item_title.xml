@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_award_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/attr_color_accent"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_double"
+        tools:text="获奖"/>
+
+    <include layout="@layout/movie_awards_item"/>
+</LinearLayout>

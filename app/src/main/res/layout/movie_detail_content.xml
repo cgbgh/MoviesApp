@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nsv_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/movie_person_detail_head" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@drawable/shape_divider" />
+
+        <include layout="@layout/detail_basic_info" />
+
+        <include layout="@layout/movie_detail_box" />
+
+        <include layout="@layout/movie_detail_awards" />
+
+        <include layout="@layout/movie_detail_actors" />
+
+        <include layout="@layout/pics_lists" />
+
+        <include layout="@layout/movie_detail_news" />
+
+        <include layout="@layout/movie_detail_events" />
+
+        <include layout="@layout/movie_detail_related" />
+
+        <include layout="@layout/movie_more_detail" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

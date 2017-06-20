@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_normal"
+    android:layout_marginRight="@dimen/spacing_mico">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        tools:src="@drawable/test" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextStyle"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_normal"
+            tools:text="攻壳机动队sss" />
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_tiny"
+            tools:text="类型：科幻/动画" />
+
+        <TextView
+            android:id="@+id/director"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_tiny"
+            tools:text="导演：xxx" />
+
+        <TextView
+            android:id="@+id/actors"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_tiny"
+            tools:text="主演：xxx" />
+
+        <TextView
+            android:id="@+id/release_date"
+            style="@style/TextStyle"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/text_mid"
+            tools:text="3月3日" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_double"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/test_pic2" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                tools:text="01"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/text_color_light"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_double"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title_cn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="@dimen/text_normal"
+                    tools:text="刺客信条" />
+
+                <TextView
+                    android:id="@+id/tv_scores"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/shape_conner_rectangle"
+                    android:backgroundTint="@color/attr_color_accent"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_light"
+                    tools:text="8.8" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title_en"
+                style="@style/TextStyle"
+                tools:text="Assassin" />
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/TextStyle"
+                tools:text="类型" />
+            <TextView
+                android:id="@+id/tv_director"
+                style="@style/TextStyle"
+                tools:text="导演" />
+            <TextView
+                android:id="@+id/tv_actor"
+                style="@style/TextStyle"
+                tools:text="主演" />
+            <TextView
+                android:id="@+id/tv_release_date"
+                style="@style/TextStyle"
+                tools:text="上映日期" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:maxLines="2"
+        android:padding="@dimen/spacing_mico"
+        tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+
+</LinearLayout>

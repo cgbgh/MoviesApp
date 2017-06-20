@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_double"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextStyle"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_normal"
+            tools:text="10部穿越回过去和熟悉的人相见的电影" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/TextStyle"
+            android:layout_marginTop="@dimen/spacing_normal"
+            tools:text="主人公穿越回过去和熟悉的人相见" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:tint="@android:color/darker_gray"
+        android:src="@drawable/right_arrow"/>
+
+</LinearLayout>

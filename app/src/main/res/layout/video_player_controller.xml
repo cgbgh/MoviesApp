@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            style="@style/style_tv_player"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/sb_progress"
+            style="@style/style_seekbar_player"
+            android:progressDrawable="@drawable/progress_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            style="@style/style_tv_player"
+            android:text="12:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/style_iv_player"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/selector_player_back" />
+
+
+        <ImageView
+            android:id="@+id/iv_pre"
+            style="@style/style_iv_player"
+            android:src="@drawable/selector_player_pre" />
+
+        <ImageView
+            android:id="@+id/iv_play_pause"
+            style="@style/style_iv_player"
+            android:src="@drawable/selector_player_pause" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            style="@style/style_iv_player"
+            android:src="@drawable/selector_player_next" />
+
+        <ImageView
+            android:id="@+id/iv_screen"
+            style="@style/style_iv_player"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/selector_player_full_screen" />
+
+
+    </LinearLayout>
+</LinearLayout>
+

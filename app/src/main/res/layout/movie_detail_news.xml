@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_root"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/divider_view" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/spacing_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="电影解读"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_normal" />
+
+        <include
+            android:id="@+id/news_all"
+            layout="@layout/show_all" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_news_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_news_cover"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/test_pic2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                style="@style/TextStyle"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_mid"
+                tools:text="刺客信条XXXXX" />
+
+            <TextView
+                android:id="@+id/tv_news_time"
+                style="@style/TextStyle"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_small"
+                tools:text="2017-03-03" />
+
+            <TextView
+                android:id="@+id/tv_news_desc"
+                style="@style/TextStyle"
+                android:maxLines="2"
+                android:textSize="@dimen/text_small"
+                tools:text="XXXXXXXXX" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

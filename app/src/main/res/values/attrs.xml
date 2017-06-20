@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="boder" format="dimension"/>
+        <attr name="boderColor" format="color"/>
+        <attr name="gravity" format="enum">
+            <enum name="start" value="0x01"/>
+            <enum name="end" value="0x02"/>
+            <enum name="center" value="0x04"/>
+        </attr>
+        
+    </declare-styleable>
+    
+</resources>

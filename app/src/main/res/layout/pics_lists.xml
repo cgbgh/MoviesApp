@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_pic_root"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/shape_divider" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/video_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_video_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="@dimen/text_normal"
+                    android:text="视频" />
+
+                <include
+                    android:id="@+id/video_all"
+                    layout="@layout/show_all" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_video_pic"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/test_title_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pic_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_imgs_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="@dimen/text_normal"
+                    android:text="剧照" />
+
+                <include
+                    android:id="@+id/pic_all"
+                    layout="@layout/show_all" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_movie_pic"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/test_title_bg" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

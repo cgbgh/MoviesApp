@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:padding="@dimen/spacing_double"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextDivideStyle"
+        android:textSize="@dimen/text_mid"
+        tools:text="XXXXXX"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="美国"/>
+
+</LinearLayout>

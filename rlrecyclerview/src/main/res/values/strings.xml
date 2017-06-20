@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RLRecyclerView</string>
+    <string name="rv_head_normal">下拉刷新</string>
+    <string name="rv_head_last_time">上次更新时间：</string>
+    <string name="rv_head_prepare">释放刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="refresh_just">刚刚</string>
+    <string name="refresh_seconds_ago">秒前</string>
+    <string name="rv_foot_normal">上拉加载更多</string>
+    <string name="loading">玩命加载中</string>
+    <string name="load_done">加载成功</string>
+    <string name="load_error">加载失败，点击重新加载</string>
+    <string name="load_no_more">已经被您榨干了O__O \"…</string>
+    <string name="refresh_error">刷新失败，请重试</string>
+    <string name="text_minute_ago">分钟前</string>
+    <string name="text_hour_ago">小时前</string>
+    <string name="text_day_ago">天前</string>
+    <string name="text_month_ago">月前</string>
+    <string name="text_year_ago">年前</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srf_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.app.cgb.movies.ui.view.MyScrollView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_margin="@dimen/spacing_normal"
+                android:text="最受关注"
+                android:textSize="@dimen/text_normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/attention_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/coming_count"
+                style="@style/TextStyle"
+                android:layout_margin="@dimen/spacing_normal"
+                android:text="即将上映"
+                android:textSize="@dimen/text_normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/coming_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </com.app.cgb.movies.ui.view.MyScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

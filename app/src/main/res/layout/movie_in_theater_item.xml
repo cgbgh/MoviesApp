@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_normal">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/test_pic2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_double"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_cn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_mid"
+                tools:text="攻壳机动队SSS" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:textColor="?attr/colorAccent"
+                android:textSize="@dimen/text_mid"
+                tools:text="8.8" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/title_en"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_small"
+            tools:text="攻壳机动队sss" />
+
+        <TextView
+            android:id="@+id/desc"
+            style="@style/TextStyle"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/text_small"
+            tools:text="攻壳机动队sss" />
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_tiny"
+            tools:text="类型：科幻/动画" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/show_time"-->
+            <!--style="@style/TextStyle"-->
+            <!--android:textSize="@dimen/text_tiny"-->
+            <!--tools:text="4月1日上映" />-->
+
+        <TextView
+            android:id="@+id/actors"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_tiny"
+            tools:text="主演：xxx" />
+        <TextView
+            android:id="@+id/show_time"
+            style="@style/TextStyle"
+            android:textSize="@dimen/text_tiny"
+            tools:text="上映日期：XXXX" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/preview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@drawable/shape_conner_rectangle"-->
+        <!--android:clickable="true"-->
+        <!--android:padding="@dimen/spacing_normal"-->
+        <!--android:text="预告片"-->
+        <!--android:textColor="@color/text_color_light" />-->
+
+</LinearLayout>

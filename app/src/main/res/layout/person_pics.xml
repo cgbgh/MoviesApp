@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_person_pic_root"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divider_view" />
+
+    <LinearLayout
+        android:id="@+id/person_pic_all"
+        android:layout_margin="@dimen/spacing_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextDivideStyle"
+            android:text="影人图集"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_color_dark"/>
+
+        <include layout="@layout/show_all"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_experiences_root"
+    android:visibility="gone"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/divider_view"/>
+
+    <TextView
+        style="@style/TextNormalStyle"
+        android:text="演艺经历"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/text_normal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_experiences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_margin="@dimen/spacing_double"
+        android:id="@+id/pb_loading"
+        android:layout_gravity="center"
+        android:layout_height="40dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_web_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_double"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_normal" />
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+

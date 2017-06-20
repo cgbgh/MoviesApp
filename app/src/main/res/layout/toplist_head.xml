@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/spacing_double"
+    android:layout_marginBottom="@dimen/spacing_double">
+
+    <LinearLayout
+        android:id="@+id/global_top100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/find_fixedtop100_img0"/>
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="全球Top100"
+            android:gravity="center"
+            android:textColor="#3182b5"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cn_top100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/find_fixedtop100_img1"/>
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="华语Top100"
+            android:gravity="center"
+            android:textColor="#4db6ad"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/global_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/find_fixedtop100_img2"/>
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="全球票房榜"
+            android:gravity="center"
+            android:textColor="#e8ad26"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+</LinearLayout>

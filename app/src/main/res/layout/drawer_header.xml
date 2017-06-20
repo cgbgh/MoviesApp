@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_nav"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nav_bg" />
+
+    <TextView
+        android:id="@+id/tv_nav_title"
+        style="@style/TextTitleStyle"
+        android:background="#8000"
+        android:textSize="@dimen/text_mid"
+        android:padding="@dimen/spacing_normal"
+        android:textColor="@color/text_color_light"
+        android:layout_alignBottom="@id/iv_nav"/>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/vp_nav_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="240dp"></android.support.v4.view.ViewPager>-->
+
+</RelativeLayout>

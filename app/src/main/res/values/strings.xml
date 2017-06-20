@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="toplist_title">电影排行榜</string>
+    <string name="movie_preview">电影预告</string>
+    <string name="movie_news">电影资讯</string>
+    <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="activity_classic_lines_toolbar_title">经典台词</string>
+    <string name="activity_company_list_toolbar">制作发行</string>
+    <string name="company_list_production">制作公司</string>
+    <string name="company_list_distributor">发行公司</string>
+    <string name="company_list_special_effects">特效公司</string>
+    <string name="company_list_other">其他公司</string>
+    <string name="activity_media_review_toolbar">媒体评论</string>
+    <string name="activity_behind_make_toolbar">制作幕后</string>
+    <string name="activity_news_detail_related">相关电影/影人</string>
+    <string name="activity_movie_news_toolbar">电影解读</string>
+    <string name="border_top">border_top</string>
+    <string name="border_bottom">border_bottom</string>
+    <string name="img_url">img_url</string>
+    <string name="no_response_data">无返回数据</string>
+    <string name="activity_videolist_toolbar">相关影片</string>
+    <string name="activity_movie_detail_basic_story">剧情：</string>
+    <string name="activity_movie_detail_basic_duration">时长：</string>
+    <string name="activity_movie_detail_basic_type">类型：</string>
+    <string name="activity_movie_detail_basic_release">上映日期/地区：</string>
+</resources>

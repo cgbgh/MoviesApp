@@ -50,7 +50,7 @@
             <!--android:scaleType="centerCrop"-->
             <!--tools:src="@drawable/mtime_test_pic" />-->
 
-            <com.app.cgb.movies.ui.view.CircleImageView
+            <com.app.cgb.moviepreview.ui.view.CircleImageView
                 android:id="@+id/iv_avatar"
                 android:layout_width="24dp"
                 android:layout_height="24dp"/>

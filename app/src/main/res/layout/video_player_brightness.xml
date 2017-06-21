@@ -13,7 +13,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.app.cgb.movies.ui.view.VerticalProgressBar
+        <com.app.cgb.moviepreview.ui.view.VerticalProgressBar
             android:id="@+id/vpb_brightness"
             style="@style/style_progress_bar_horizontal"
             android:layout_width="wrap_content"

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/srf_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.app.cgb.movies.ui.view.MyScrollView
+    <com.app.cgb.moviepreview.ui.view.MyScrollView
         android:id="@+id/myscrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -41,6 +40,6 @@
 
         </LinearLayout>
 
-    </com.app.cgb.movies.ui.view.MyScrollView>
+    </com.app.cgb.moviepreview.ui.view.MyScrollView>
 
 </android.support.v4.widget.SwipeRefreshLayout>

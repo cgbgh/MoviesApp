@@ -7,7 +7,7 @@
     android:layout_marginTop="@dimen/spacing_normal"
     android:orientation="horizontal">
 
-    <com.app.cgb.movies.ui.view.CircleImageView
+    <com.app.cgb.moviepreview.ui.view.CircleImageView
         android:id="@+id/iv_avatar"
         android:layout_width="50dp"
         android:layout_height="50dp"

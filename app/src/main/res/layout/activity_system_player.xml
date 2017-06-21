@@ -6,7 +6,7 @@
     android:background="#000">
 
 
-    <com.app.cgb.movies.ui.view.SizableVideo
+    <com.app.cgb.moviepreview.ui.view.SizableVideo
         android:id="@+id/svv_player"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

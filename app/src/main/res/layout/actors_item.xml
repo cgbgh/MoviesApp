@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.app.cgb.movies.ui.view.CircleImageView
+    <com.app.cgb.moviepreview.ui.view.CircleImageView
         android:id="@+id/iv_cover"
         android:layout_width="80dp"
         android:layout_height="80dp"
